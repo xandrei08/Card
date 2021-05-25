@@ -1,0 +1,257 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+/* Main card design */
+.card {
+  position: relative;
+  margin: 5% 0 0 25%;
+  width: 20vw;
+  height: 90vh;
+  border-radius: 2%;
+  display: grid;
+  grid-template-rows: 40% 1fr;
+  box-shadow: 0px 4px 4px 4px grey;
+  border-top-left-radius: 7%;
+  border-top-right-radius: 7%;
+}
+/*This is the deisgn for the card-top */
+.card-top {
+  position: relative;
+  background-image: url(./image1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top-left-radius: 7%;
+  border-top-right-radius: 7%;
+  text-align: center;
+}
+/*Card-top image overlay*/
+.card-top-overlay:hover {
+  width: 100%;
+  height: 100%;
+  background: rgb(227, 119, 117);
+  background: linear-gradient(
+    0deg,
+    rgba(227, 119, 117, 0.5) 0%,
+    rgba(233, 98, 98, 0.5) 100%
+  );
+  border-top-left-radius: 7%;
+  border-top-right-radius: 7%;
+  transition: all 0.2s ease-in-out;
+}
+/*profile image */
+#profile {
+  position: absolute;
+  width: 25%;
+  left: 40%;
+  top: 7%;
+  border-radius: 20%;
+  animation: rotate 1s 1;
+  transition: all 1s ease-in-out;
+}
+
+#studentName {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  margin: 0;
+  font-weight: 300;
+  color: #fff;
+}
+#profession {
+  position: absolute;
+  bottom: 38%;
+  left: 40%;
+  margin: 0;
+  font-weight: 400;
+  color: #fff;
+}
+#studentId {
+  position: absolute;
+  margin: 0;
+  bottom: 23%;
+  height: 30px;
+  left: 38%;
+  color: #fff;
+  font-weight: 700;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 15px;
+}
+#studentId:hover {
+  color: yellow;
+}
+
+/*The Deisgn for the card body */
+.card-body {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.card-title {
+  margin-top: 17%;
+  color: rgb(128, 128, 128);
+  font-weight: 700;
+  list-style: none;
+}
+.contactDetails {
+  font-size: calc(9px + 0.3em);
+  color: #fff;
+  list-style: none;
+}
+.aboutMe {
+  font-size: calc(9px + 0.3em);
+  margin-top: -10%;
+  color: #fff;
+  list-style: none;
+}
+.card-text1 {
+  font-weight: 300;
+  font-size: calc(9px + 0.2em);
+  list-style: none;
+}
+.card-text2 {
+  font-weight: 300;
+  font-size: calc(9px + 0.2em);
+  list-style: none;
+}
+/*Table Design */
+table {
+  display: flex;
+  flex-shrink: 1;
+  position: absolute;
+  text-align: center;
+  width: 18vw;
+  height: 8vh;
+  background-color: rgb(80, 80, 80);
+  border-radius: 4vh;
+  z-index: 1;
+  top: 35%;
+  left: 5%;
+}
+table,
+th {
+  padding-left: 5px;
+  padding-top: 6px;
+  color: #fff;
+  font-size: calc(10px + 0.3em);
+}
+table,
+td {
+  padding-left: 10px;
+  font-size: 10px;
+  color: rgb(177, 177, 177);
+  padding-bottom: 6px;
+}
+
+th:last-child {
+  border-left: 1px solid rgb(177, 177, 177);
+}
+
+/*Dropdown menu design */
+
+.dropbtn {
+  display: flex;
+  flex-shrink: 1;
+  padding-left: 25%;
+  background-color: rgb(80, 80, 80);
+  width: 20vw;
+  height: 8vh;
+  color: white;
+  border: none;
+}
+.courseInfo {
+  display: flex;
+  flex-shrink: 1;
+  position: relative;
+  display: inline-block;
+}
+#btnInfo {
+  display: flex;
+  flex-shrink: 1;
+  position: absolute;
+  bottom: 16%;
+}
+
+#grade {
+  display: flex;
+  flex-shrink: 1;
+  position: absolute;
+  bottom: 15%;
+  text-decoration: none;
+  list-style: none;
+  color: rgb(255, 255, 255, 0.5);
+  font-weight: 300;
+}
+#cap {
+  position: absolute;
+  display: grid;
+  align-items: center;
+  left: 12%;
+  bottom: 30%;
+  height: 3vh;
+  width: 2vw;
+  border-radius: 1.5vh;
+  background-color: rgb(227, 119, 117);
+}
+.fa.fa-graduation-cap {
+  font-size: calc(12px + 0.3em);
+  color: white;
+  border-radius: 7px;
+}
+#arrow {
+  display: flex;
+  flex-shrink: 1;
+  position: absolute;
+  right: 10%;
+  top: 35%;
+  font-weight: 700;
+  font-size: calc(10px + 0.1em);
+}
+
+.courseInfo-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(80, 80, 80);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.courseInfo-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  color: #fff;
+}
+
+.courseInfo-content a:hover {
+  background-color: rgb(128, 128, 128);
+  color: #fff;
+}
+.courseInfo:hover .courseInfo-content {
+  display: block;
+  flex-shrink: 2;
+  position: absolute;
+  top: 0%;
+  right: -50%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-basis: auto;
+  flex-shrink: 1;
+  padding: 0 4px;
+  width: 9vw;
+  height: 8vh;
+}
+.column {
+  height: 45%;
+  width: 100%;
+  padding: 5px 5px 3px 5px;
+}
+.column img {
+  margin-top: 8px;
+  height: 9vh;
+}
